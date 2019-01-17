@@ -1,0 +1,124 @@
+<!--
+  Generated template for the BrowserPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar color="buriram">
+        <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>{{selectedItem}}</ion-title>
+      </ion-navbar>
+
+</ion-header>
+
+<ion-content no-padding>
+  <div *ngIf="selectedItem == 'ข่าวประชาสัมพันธ์'">
+    <iframe src='http://www.buriramgames.com/news/pr-news/'></iframe>
+  </div>
+  
+  <!-- p1 -->
+  <div *ngIf="selectedItem == 'สัญลักษณ์การแข่งขัน'">
+    <iframe src='http://www.buriramgames.com/buriram-games-35/logo/'></iframe>
+  </div>
+  <div *ngIf="selectedItem == 'สัญลักษณ์สัตว์นำโชคการแข่งขัน'">
+    <iframe src='http://www.buriramgames.com/buriram-games-35/mascot/'></iframe>
+  </div>
+  <div *ngIf="selectedItem == 'กำหนดการเปิด/ปิด'">
+    <iframe src='http://www.buriramgames.com/buriram-games-35/schedule/'></iframe>
+  </div>
+  <div *ngIf="selectedItem == 'กำหนดการเลี้ยงต้อนรับนักกีฬา'">
+    <iframe src='http://www.buriramgames.com/buriram-games-35/welcome-schedule/'></iframe>
+  </div>
+  <div *ngIf="selectedItem == 'จำนวนนักกีฬา'">
+    <iframe src='http://www.buriramgames.com/buriram-games-35/athletes-who-competed/'></iframe>
+  </div>
+  <div *ngIf="selectedItem == 'นักวิ่งคบเพลิง'">
+    <iframe src='http://www.buriramgames.com/buriram-games-35/torch-runner/'></iframe>
+  </div>
+  <div *ngIf="selectedItem == 'ผู้แทนผู้ตัดสิน'">
+    <iframe src='http://www.buriramgames.com/buriram-games-35/referee/'></iframe>
+  </div>
+  <div *ngIf="selectedItem == 'คณะกรรมการจัดการแข่งขัน'">
+    <iframe src='http://www.buriramgames.com/buriram-games-35/competition-committee/'></iframe>
+  </div>
+  <!-- end p1 -->
+  <!-- p2 -->
+  <div *ngIf="selectedItem == 'ชนิดกีฬาที่ทำการแข่งขัน'">
+    <iframe src='http://www.buriramgames.com/information/list-of-sports/'></iframe>
+  </div>
+  <div *ngIf="selectedItem == 'กำหนดการแข่งขัน'">
+    <iframe src='http://www.buriramgames.com/information/sport-schedule/'></iframe>
+  </div>
+  <div *ngIf="selectedItem == 'ตารางการแข่งขัน'">
+    <iframe src='http://www.buriramgames.com/information/competition-schedule/'></iframe>
+  </div>
+  <div *ngIf="selectedItem == 'สนามแข่งกีฬาและฝึกซ้อม'">
+    <iframe src='http://www.buriramgames.com/information/race-course-practice-field/'></iframe>
+  </div>
+  <div *ngIf="selectedItem == 'รายชื่อนักกีฬา'">
+    <iframe src='http://www.buriramgames.com/information/list-of-athletes/'></iframe>
+  </div>
+  <div *ngIf="selectedItem == 'กำหนดการประชุมผู้จัดการทีม'">
+    <iframe src='http://www.buriramgames.com/information/team-manager-meeting-schedule/'></iframe>
+  </div>
+  <div *ngIf="selectedItem == 'สูจิบัตรและระเบียบการแข่งขันแต่ละประเภท'">
+    <iframe src='http://www.buriramgames.com/information/team-manager-meeting-schedule/'></iframe>
+  </div>
+  <!-- end p2 -->
+
+  <!-- p3 -->
+  <div *ngIf="selectedItem == 'ผลการแข่งขันตามชนิดกีฬา'">
+    <iframe src='http://www.buriramgames.com/result/result-by-sport/'></iframe>
+  </div>
+  <div *ngIf="selectedItem == 'รายงานการแข่งขึ้นประจำวัน'">
+    <iframe src='http://www.buriramgames.com/result/result-by-daily/'></iframe>
+  </div>
+  <div *ngIf="selectedItem == 'สรุปผลการแข่งขันประจำวัน'">
+    <iframe src='http://www.buriramgames.com/result/conclude-by-day/'></iframe>
+  </div>
+  <div *ngIf="selectedItem == 'สรุปผลการแข่งขันทั้งหมด'">
+    <iframe src='http://www.buriramgames.com/result/result-all/'></iframe>
+  </div>
+  <!-- end p3 -->
+
+  <!-- end p4 -->
+  <div *ngIf="selectedItem == 'ตามสังกัด'">
+    <iframe src='http://www.buriramgames.com/medal/medal-team/'></iframe>
+  </div>
+  <div *ngIf="selectedItem == 'สรุปเหรียญรางวัลประจำวัน'">
+    <iframe src='http://www.buriramgames.com/medal/medal-daily/'></iframe>
+  </div>
+  <div *ngIf="selectedItem == 'ตารางการสรุปเหรียญรางวัล'">
+    <iframe src='http://www.buriramgames.com/medal/medal-table/'></iframe>
+  </div>
+  <div *ngIf="selectedItem == 'สรุปเหรียญตามภูมิภาค'">
+    <iframe src='http://www.buriramgames.com/medal/medal-sector/'></iframe>
+  </div>
+  <!-- end p4 -->
+
+  <!-- p5 -->
+  <div *ngIf="selectedItem == 'ที่พักนักกีฬา'">
+    <iframe src='http://www.buriramgames.com/accommodation/athlete-accommodation/'></iframe>
+  </div>
+  <div *ngIf="selectedItem == 'โรงแรมที่พัก'">
+    <iframe src='http://www.buriramgames.com/accommodation/hotel/'></iframe>
+  </div>
+  <!-- end p5 -->
+  <!-- p6 -->
+  <div *ngIf="selectedItem == 'เกี่ยวกับบุรีรัมย์'">
+      <iframe src='http://www.buriramgames.com/buriram/about/'></iframe>
+    </div>
+    <div *ngIf="selectedItem == 'สถานที่ท่องเที่ยว'">
+      <iframe src='http://www.buriramgames.com/buriram/travel-place/'></iframe>
+    </div>
+    <div *ngIf="selectedItem == 'การเดินทาง'">
+        <iframe src='http://www.buriramgames.com/buriram/the-route/'></iframe>
+      </div>
+  <!-- end p6 -->
+  
+  
+</ion-content>

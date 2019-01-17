@@ -1,0 +1,68 @@
+<!--
+  Generated template for the HomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar color="buriram">
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>หน้าแรก</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+<ion-content no-padding>
+
+    <header>
+        <img src="../../assets/imgs/banner.jpg" />
+    </header>
+    <div class="wrapper">
+        <div class="box" (click)="openBuriramGamesPage($event, 'buriramgame')">
+            <ion-img src="../assets/imgs/logo.jpg" color="buriram"></ion-img>
+            <p>บุรีรัมย์เกมส์</p>
+        </div>
+        <div class="box" (click)="openCompetition($event, 'competition')">
+            <ion-icon ios="ios-bicycle" md="md-bicycle" color="buriram"></ion-icon>
+            <p>ข้อมูลการแข่งขัน</p>
+        </div>
+        <div class="box" (click)="openResult($event, 'result')">
+            <ion-icon ios="ios-podium" md="md-podium" color="buriram"></ion-icon>
+            <p>ผลการแข่งขัน</p>
+        </div>
+        <div class="box" (click)="openMedal($event, 'medal')">
+            <ion-icon ios="ios-medal" md="md-medal" color="buriram"></ion-icon>
+            <p>สรุปเหรียญรางวัล</p>
+        </div>
+        <div class="box" (click)="openPage($event, 'ข่าวประชาสัมพันธ์')">
+            <ion-icon ios="ios-megaphone" md="md-megaphone" color="buriram"></ion-icon>
+            <p>ข่าวประชาสัมพันธ์</p>
+        </div>
+        <div class="box" (click)="openAccommodatione($event, 'accommodation')">
+            <ion-icon ios="ios-home" md="md-home" color="buriram"></ion-icon>
+            <p>สถานที่พัก</p>
+        </div>
+        <div class="box" onclick="window.open('fb://page/492281294592520', '_system', 'location=yes'); return false;">
+            <ion-icon ios="logo-facebook" md="logo-facebook" color="buriram"></ion-icon>
+            <p>Facebook</p>
+        </div>
+        <div class="box" onclick="window.open('http://www.buriramgames.com', '_system', 'location=yes'); return false;">
+            <ion-icon ios="ios-globe" md="md-globe" color="buriram"></ion-icon>
+            <p>เว็บไซต์</p>
+        </div>
+        <div class="box" (click)="openRecommend($event, 'recommend')">
+            <ion-icon ios="ios-heart" md="md-heart" color="buriram"></ion-icon>
+            <p>แนะนำจังหวัดบุรีรัมย์</p>
+        </div>
+        <!-- <div class="box" (click)="openPage($event, 'emergency')">
+            <ion-icon ios="ios-call" md="md-call" color="buriram"></ion-icon>
+            <p>ฉุกเฉิน</p>
+        </div> -->
+        
+
+    </div>
+
+</ion-content>

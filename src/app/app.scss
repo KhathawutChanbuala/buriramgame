@@ -14,3 +14,28 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+.slide-menu{
+  //font-size: 18px;
+  font-weight: bold;
+  color: #02478c;
+}
+.profile-image {
+
+	img {
+		border-radius: 10%;
+		margin-top: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		//border: 4px solid $SIDEMENU_TRANSPARENCY;
+		border-color: #06881C;
+		display: block;
+		width: 40%;
+		height: auto;
+	}
+
+}
+
+.footer{
+  font-size: 16px;
+  text-align: center;
+}

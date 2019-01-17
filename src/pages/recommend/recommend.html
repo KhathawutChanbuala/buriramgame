@@ -1,0 +1,35 @@
+<!--
+  Generated template for the MedalPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar color="buriram">
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>แนะนำจังหวัดบุรีรัมย์</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content no-padding>
+      <div class="wrapper">
+      
+        <div class="box" (click)="openPage($event, 'เกี่ยวกับบุรีรัมย์')">
+          <ion-icon ios="ios-book" md="md-book" color="buriram"></ion-icon>
+          <p>เกี่ยวกับบุรีรัมย์</p>
+        </div>
+        <div class="box" (click)="openPage($event, 'สถานที่ท่องเที่ยว')">
+            <ion-icon ios="ios-map" md="md-map" color="buriram"></ion-icon>
+          <p>สถานที่ท่องเที่ยว</p>
+        </div>
+        <div class="box" (click)="openPage($event, 'การเดินทาง')">
+            <ion-icon ios="ios-car" md="md-car" color="buriram"></ion-icon>
+          <p>การเดินทาง</p>
+        </div>
+      </div>
+  </ion-content>

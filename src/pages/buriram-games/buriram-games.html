@@ -1,0 +1,55 @@
+<!--
+  Generated template for the BuriramGamesPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="buriram">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>บุรีรัมย์เกมส์</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content no-padding>
+  <div class="wrapper">
+
+        <div class="box" (click)="openPage($event, 'สัญลักษณ์การแข่งขัน')">
+          <ion-icon ios="ios-book" md="md-book" color="buriram"></ion-icon>
+            <p>สัญลักษณ์การแข่งขัน</p>
+        </div>
+        <div class="box" (click)="openPage($event, 'สัญลักษณ์สัตว์นำโชคการแข่งขัน')">
+          <ion-icon ios="ios-book" md="md-book" color="buriram"></ion-icon>
+            <p>สัญลักษณ์สัตว์นำโชคการแข่งขัน</p>
+        </div>
+        <div class="box" (click)="openPage($event, 'กำหนดการเปิด/ปิด')">
+          <ion-icon ios="ios-calendar" md="md-calendar" color="buriram"></ion-icon>
+            <p>กำหนดการเปิด/ปิด</p>
+        </div>
+        <div class="box" (click)="openPage($event, 'กำหนดการเลี้ยงต้อนรับนักกีฬา')">
+            <ion-icon ios="ios-calendar" md="md-calendar" color="buriram"></ion-icon>
+            <p>กำหนดการเลี้ยงต้อนรับนักกีฬา</p>
+        </div>
+        <div class="box" (click)="openPage($event, 'จำนวนนักกีฬา')">
+            <ion-icon ios="ios-bicycle" md="md-bicycle" color="buriram"></ion-icon>
+            <p>จำนวนนักกีฬา</p>
+        </div>
+        <div class="box" (click)="openPage($event, 'นักวิ่งคบเพลิง')">
+            <ion-icon ios="ios-bonfire" md="md-bonfire" color="buriram"></ion-icon>
+            <p>นักวิ่งคบเพลิง</p>
+        </div>
+        <div class="box" (click)="openPage($event, 'ผู้แทนผู้ตัดสิน')">
+            <ion-icon ios="ios-man" md="md-man" color="buriram"></ion-icon>
+            <p>ผู้แทนผู้ตัดสิน</p>
+        </div>
+        <div class="box" (click)="openPage($event, 'คณะกรรมการจัดการแข่งขัน')">
+            <ion-icon ios="ios-people" md="md-people" color="buriram"></ion-icon>
+            <p>คณะกรรมการจัดการแข่งขัน</p>
+        </div>
+    </div>
+</ion-content>
