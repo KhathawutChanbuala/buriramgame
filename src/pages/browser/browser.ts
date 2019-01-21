@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
 import { InAppBrowser,InAppBrowserOptions } from '@ionic-native/in-app-browser';
 
 /**
@@ -18,9 +18,27 @@ export class BrowserPage {
   selectedItem: any;
   constructor(public navCtrl: NavController, 
               public navParams: NavParams,
-              private inAppBrowser:InAppBrowser) {
+              private inAppBrowser:InAppBrowser,
+              public loadingCtrl: LoadingController) {
+      
       this.selectedItem=navParams.get('item');
+      this.presentLoading();
       //alert(this.selectedItem);
+      
+  }
+  // presentLoading() {
+  //   this.loadingCtrl.create({
+  //     content: 'Please wait...',
+  //     duration: 9000,
+  //     dismissOnPageChange: true
+  //   }).present();
+  // }
+  presentLoading() {
+    const loader = this.loadingCtrl.create({
+      content: "Please wait...",
+      duration: 2000
+    });
+    loader.present();
   }
   openWebpage(url: string) {
     const options: InAppBrowserOptions = {

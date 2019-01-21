@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, Platform, Alert } from 'ionic-angular';
 import { BrowserPage } from "../browser/browser";
 import { BuriramGamesPage } from '../buriram-games/buriram-games';
 import { CompetitionPage } from '../competition/competition';
@@ -21,8 +21,18 @@ import { RecommendPage } from '../recommend/recommend';
   templateUrl: 'home.html',
 })
 export class HomePage {
+  platformOS: any;
+  constructor(public navCtrl: NavController, public navParams: NavParams,public platform:Platform) {
+    if (this.platform.is('ios')) {
+      this.platformOS='ios';
+      //alert('ios');
+    }
+    if (this.platform.is('android')) {
+      this.platformOS='android';
+      //alert('android');
+    }
+    
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
   openPage(event, item) {
     this.navCtrl.push(BrowserPage, {

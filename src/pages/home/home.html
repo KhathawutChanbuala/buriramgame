@@ -45,10 +45,16 @@
             <ion-icon ios="ios-home" md="md-home" color="buriram"></ion-icon>
             <p>สถานที่พัก</p>
         </div>
-        <div class="box" onclick="window.open('fb://page/492281294592520', '_system', 'location=yes'); return false;">
+
+        <div *ngIf="platformOS == 'ios'" class="box" onclick="window.open('https://www.facebook.com/buriramgames35/', '_system', 'location=yes'); return false;">
             <ion-icon ios="logo-facebook" md="logo-facebook" color="buriram"></ion-icon>
             <p>Facebook</p>
         </div>
+        <div *ngIf="platformOS == 'android'" class="box" onclick="window.open('fb://page/492281294592520', '_system', 'location=yes'); return false;">
+            <ion-icon ios="logo-facebook" md="logo-facebook" color="buriram"></ion-icon>
+            <p>Facebook</p>
+        </div>
+
         <div class="box" onclick="window.open('http://www.buriramgames.com', '_system', 'location=yes'); return false;">
             <ion-icon ios="ios-globe" md="md-globe" color="buriram"></ion-icon>
             <p>เว็บไซต์</p>
