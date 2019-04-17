@@ -11,6 +11,13 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { NewsPage } from '../pages/news/news';
 
+import { BuriramGamesPage } from "../pages/buriram-games/buriram-games";
+import { CompetitionPage } from "../pages/competition/competition";
+import { ResultPage } from "../pages/result/result";
+import { MedalPage } from "../pages/medal/medal";
+import { AccommodationPage } from "../pages/accommodation/accommodation";
+import { RecommendPage } from "../pages/recommend/recommend";
+
 
 @Component({
   templateUrl: 'app.html'
@@ -20,7 +27,7 @@ export class MyApp {
 
   // make HelloIonicPage the root (or first) page
   rootPage = HomePage;
-  pages: Array<{title: string, component: any,icon:string}>;
+  pages: Array<{title: string, component: any,icon:string,item:string}>;
 
   constructor(
     public platform: Platform,
@@ -34,10 +41,14 @@ export class MyApp {
     this.pages = [
       // { title: 'Hello Ionic', component: HelloIonicPage },
       // { title: 'My First List', component: ListPage }
-      {title: 'หน้าแรก', component:HomePage,icon:"home"},
-      // {title: 'ข่าวสาร', component:NewsPage,icon:"home"},
-      // {title: 'test', component:BrowserPage,icon:"home"},
-      
+      {title: 'หน้าแรก', component:HomePage,icon:"home",item:""},
+      {title: 'บุรีรัมย์เกมส์', component:BuriramGamesPage,icon:"football",item:""},
+      {title: 'ข้อมูลการแข่งขัน', component:CompetitionPage,icon:"bicycle",item:""},
+      {title: 'ผลการแข่งขัน', component:ResultPage,icon:"podium",item:""},
+      {title: 'สรุปเหรียญรางวัล', component:MedalPage,icon:"medal",item:""},
+      {title: 'ข่าวประชาสัมพันธ์', component:BrowserPage,icon:"megaphone",item:"ข่าวประชาสัมพันธ์"},
+      {title: 'สถานที่พัก', component:AccommodationPage,icon:"home",item:""},
+      {title: 'แนะนำจังหวัดบุรีรัมย์', component:RecommendPage,icon:"heart",item:""},
     ];
   }
 
@@ -54,6 +65,6 @@ export class MyApp {
     // close the menu when clicking a link from the menu
     this.menu.close();
     // navigate to the new page if it is not the current page
-    this.nav.setRoot(page.component);
+    this.nav.setRoot(page.component, {item:page.item});
   }
 }
