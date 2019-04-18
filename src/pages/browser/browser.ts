@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController, Loading } from 'ionic-angular';
 import { InAppBrowser,InAppBrowserOptions } from '@ionic-native/in-app-browser';
 
 /**
@@ -16,14 +16,17 @@ import { InAppBrowser,InAppBrowserOptions } from '@ionic-native/in-app-browser';
 })
 export class BrowserPage {
   selectedItem: any;
+  loader:any;
+
   constructor(public navCtrl: NavController, 
               public navParams: NavParams,
               private inAppBrowser:InAppBrowser,
               public loadingCtrl: LoadingController) {
       
       this.selectedItem=navParams.get('item');
-      this.presentLoading();
+       //this.presentLoading();
       //alert(this.selectedItem);
+      console.log('constructor..............');
       
   }
   // presentLoading() {
@@ -33,13 +36,14 @@ export class BrowserPage {
   //     dismissOnPageChange: true
   //   }).present();
   // }
-  presentLoading() {
-    const loader = this.loadingCtrl.create({
-      content: "Please wait...",
-      duration: 2000
-    });
-    loader.present();
-  }
+  // presentLoading() {
+  //   const loader = this.loadingCtrl.create({
+  //     content: "Please wait...",
+  //      //duration: 2000
+  //   });
+  //   loader.present();
+    
+  // }
   openWebpage(url: string) {
     const options: InAppBrowserOptions = {
       zoom: 'no'
@@ -52,7 +56,23 @@ export class BrowserPage {
   }
 
   ionViewDidLoad() {
+    this.loader = this.loadingCtrl.create({
+      content: "Please wait...",
+       //duration: 2000
+    });
+    this.loader.present();
     console.log('ionViewDidLoad BrowserPage');
+    document.getElementById('load').onload =  () => {
+      console.log('Frame element loaded');
+      this.loader.dismissAll();
+    }
+
+    
   }
+  ionViewWillUnload(){
+    this.loader.dismissAll();
+  }
+
+  
 
 }

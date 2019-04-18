@@ -47,7 +47,8 @@
             <ion-icon ios="ios-man" md="md-man" color="buriram"></ion-icon>
             <p>ผู้แทนผู้ตัดสิน</p>
         </div>
-        <div class="box" (click)="openPage($event, 'คณะกรรมการจัดการแข่งขัน')">
+        <div class="box" onclick="window.open('http://www.buriramgames.com/wp-content/uploads/2019/03/brg35-Committee.pdf', '_system', 'location=yes'); return false;">
+        <!-- <div class="box" (click)="openPage($event, 'คณะกรรมการจัดการแข่งขัน')"> -->
             <ion-icon ios="ios-people" md="md-people" color="buriram"></ion-icon>
             <p>คณะกรรมการจัดการแข่งขัน</p>
         </div>
@@ -56,3 +57,8 @@
       <img src="http://www.buriramgames.com/wp-content/uploads/2019/01/Asset-9.svg" width="50%" />
     </header>
 </ion-content>
+<ion-footer>
+    <ion-toolbar onclick="window.open('https://www.bru.ac.th', '_system', 'location=yes'); return false;">
+        <p class="footer">Copyright © 2019 BRU</p>
+    </ion-toolbar>
+</ion-footer>

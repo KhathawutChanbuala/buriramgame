@@ -19,7 +19,8 @@
   <ion-content no-padding>
       <div class="wrapper">
       
-        <div class="box" (click)="openPage($event, 'ที่พักนักกีฬา')">
+        <div class="box" onclick="window.open('http://www.buriramgames.com/hostel/hostellist.php', '_system', 'location=yes'); return false;">
+        <!-- <div class="box" (click)="openPage($event, 'ที่พักนักกีฬา')"> -->
           <ion-icon ios="ios-home" md="md-home" color="buriram"></ion-icon>
           <p>ที่พักนักกีฬา</p>
         </div>
@@ -32,4 +33,8 @@
         <img src="http://www.buriramgames.com/wp-content/uploads/2019/01/Asset-19.svg" width="50%" />
       </header>
   </ion-content>
-  
+  <ion-footer>
+      <ion-toolbar onclick="window.open('https://www.bru.ac.th', '_system', 'location=yes'); return false;">
+          <p class="footer">Copyright © 2019 BRU</p>
+      </ion-toolbar>
+  </ion-footer>
