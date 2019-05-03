@@ -17,6 +17,7 @@ import { ResultPage } from "../pages/result/result";
 import { MedalPage } from "../pages/medal/medal";
 import { AccommodationPage } from "../pages/accommodation/accommodation";
 import { RecommendPage } from "../pages/recommend/recommend";
+import { FieldPage } from "../pages/field/field";
 
 
 @Component({
@@ -47,6 +48,8 @@ export class MyApp {
       {title: 'ผลการแข่งขัน', component:ResultPage,icon:"podium",item:""},
       {title: 'สรุปเหรียญรางวัล', component:MedalPage,icon:"medal",item:""},
       {title: 'ข่าวประชาสัมพันธ์', component:BrowserPage,icon:"megaphone",item:"ข่าวประชาสัมพันธ์"},
+      {title: 'สนามแข่งขัน', component:FieldPage,icon:"map",item:""},
+      {title: 'ระบบจองคิวรถ รับ–ส่ง ', component:BrowserPage,icon:"bus",item:"ระบบจองคิวรถ"},
       {title: 'สถานที่พัก', component:AccommodationPage,icon:"home",item:""},
       {title: 'แนะนำจังหวัดบุรีรัมย์', component:RecommendPage,icon:"heart",item:""},
     ];

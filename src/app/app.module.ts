@@ -19,6 +19,7 @@ import { ResultPage } from '../pages/result/result';
 import { MedalPage } from '../pages/medal/medal';
 import { AccommodationPage } from '../pages/accommodation/accommodation';
 import { RecommendPage } from '../pages/recommend/recommend';
+import { FieldPage } from "../pages/field/field";
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { RecommendPage } from '../pages/recommend/recommend';
     ResultPage,
     MedalPage,
     AccommodationPage,
-    RecommendPage
+    RecommendPage,
+    FieldPage
   ],
   imports: [
     BrowserModule,
@@ -55,7 +57,8 @@ import { RecommendPage } from '../pages/recommend/recommend';
     ResultPage,
     MedalPage,
     AccommodationPage,
-    RecommendPage
+    RecommendPage,
+    FieldPage
   ],
   providers: [
     StatusBar,

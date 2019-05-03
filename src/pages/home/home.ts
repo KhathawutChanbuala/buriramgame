@@ -7,6 +7,7 @@ import { ResultPage } from '../result/result';
 import { MedalPage } from '../medal/medal';
 import { AccommodationPage } from '../accommodation/accommodation';
 import { RecommendPage } from '../recommend/recommend';
+import { FieldPage } from "../field/field";
 
 /**
  * Generated class for the HomePage page.
@@ -67,6 +68,11 @@ export class HomePage {
   }
   openRecommend(event, item){
     this.navCtrl.push(RecommendPage, {
+      item: item
+    });
+  }
+  openField(event, item){
+    this.navCtrl.push(FieldPage, {
       item: item
     });
   }

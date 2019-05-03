@@ -19,6 +19,9 @@
   <div *ngIf="selectedItem == 'ข่าวประชาสัมพันธ์'">
     <iframe src='http://www.buriramgames.com/news/pr-news/' id="load"></iframe>
   </div>
+  <div *ngIf="selectedItem == 'ระบบจองคิวรถ'">
+    <iframe src='http://www.buriramgames.com/information/coordination-center/vehicle-and-transportation-department/' id="load"></iframe>
+  </div>
   
   <!-- p1 -->
   <div *ngIf="selectedItem == 'สัญลักษณ์การแข่งขัน'">
@@ -26,6 +29,9 @@
   </div>
   <div *ngIf="selectedItem == 'สัญลักษณ์สัตว์นำโชคการแข่งขัน'">
     <iframe src='http://www.buriramgames.com/buriram-games-35/mascot/' id="load"></iframe>
+  </div>
+  <div *ngIf="selectedItem == 'เพลงประจำการแข่งขัน'">
+    <iframe src='http://www.buriramgames.com/buriram-games-35/song/' id="load"></iframe>
   </div>
   <div *ngIf="selectedItem == 'กำหนดการเปิด/ปิด'">
     <iframe src='http://www.buriramgames.com/buriram-games-35/schedule/' id="load"></iframe>
@@ -102,7 +108,6 @@
     <iframe src='http://www.buriramgames.com/medal/medal-sector/' id="load"></iframe>
   </div>
   <!-- end p4 -->
-
   <!-- p5 -->
   <div *ngIf="selectedItem == 'ที่พักนักกีฬา'">
       <!-- <a class="item" href="#" onclick="window.open('http://www.buriramgames.com/wp-content/uploads/2019/04/brg35-accommodation-04-10-2019.pdf', '_system', 'location=yes'); return false;">
@@ -118,15 +123,25 @@
   <!-- end p5 -->
   <!-- p6 -->
   <div *ngIf="selectedItem == 'เกี่ยวกับบุรีรัมย์'">
-      <iframe src='http://www.buriramgames.com/buriram/about/' id="load"></iframe>
-    </div>
-    <div *ngIf="selectedItem == 'สถานที่ท่องเที่ยว'">
-      <iframe src='http://www.buriramgames.com/buriram/travel-place/' id="load"></iframe>
-    </div>
-    <div *ngIf="selectedItem == 'การเดินทาง'">
-        <iframe src='http://www.buriramgames.com/buriram/the-route/' id="load"></iframe>
-      </div>
+    <iframe src='http://www.buriramgames.com/buriram/about/' id="load"></iframe>
+  </div>
+  <div *ngIf="selectedItem == 'สถานที่ท่องเที่ยว'">
+    <iframe src='http://www.buriramgames.com/buriram/travel-place/' id="load"></iframe>
+  </div>
+  <div *ngIf="selectedItem == 'การเดินทาง'">
+    <iframe src='http://www.buriramgames.com/buriram/the-route/' id="load"></iframe>
+  </div>
   <!-- end p6 -->
-  
+  <!-- p7 -->
+  <div *ngIf="selectedItem == 'อำเภอเมืองบุรีรัมย์'">
+    <iframe src='http://www.buriramgames.com/information/challenge-field/muang-buriram/' id="load"></iframe>
+  </div>
+  <div *ngIf="selectedItem == 'อำเภออื่นๆ'">
+    <iframe src='http://www.buriramgames.com/information/challenge-field/amphoe-buriram/' id="load"></iframe>
+  </div>
+  <div *ngIf="selectedItem == 'นครราชสีมาและสมุทรปราการ'">
+    <iframe src='http://www.buriramgames.com/information/challenge-field/nakhon-ratchasima-and-samut-prakan/' id="load"></iframe>
+  </div>
+  <!-- end p7 -->
   
 </ion-content>

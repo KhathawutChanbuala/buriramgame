@@ -41,9 +41,17 @@
             <ion-icon ios="ios-megaphone" md="md-megaphone" color="buriram"></ion-icon>
             <p>ข่าวประชาสัมพันธ์</p>
         </div>
+        <div class="box" (click)="openField($event, 'field')">
+            <ion-icon ios="ios-map" md="md-map" color="buriram"></ion-icon>
+            <p>สนามแข่งขัน</p>
+        </div>
         <div class="box" (click)="openAccommodatione($event, 'accommodation')">
             <ion-icon ios="ios-home" md="md-home" color="buriram"></ion-icon>
             <p>สถานที่พัก</p>
+        </div>
+        <div class="box" (click)="openPage($event, 'ระบบจองคิวรถ')">
+            <ion-icon ios="ios-bus" md="md-bus" color="buriram"></ion-icon>
+            <p>ระบบจองคิวรถ รับ–ส่ง</p>
         </div>
 
         <div *ngIf="platformOS == 'ios'" class="box" onclick="window.open('https://www.facebook.com/buriramgames35/', '_system', 'location=yes'); return false;">

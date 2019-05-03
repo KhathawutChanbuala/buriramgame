@@ -1,0 +1,45 @@
+<!--
+  Generated template for the FieldPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar color="buriram">
+        <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>สนามแข่งขัน</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div class="wrapper">
+    <div class="box" (click)="openPage($event, 'อำเภอเมืองบุรีรัมย์')">
+      <ion-icon ios="ios-map" md="md-map" color="buriram"></ion-icon>
+      <p>อำเภอเมืองบุรีรัมย์</p>
+    </div>
+    <div class="box" (click)="openPage($event, 'อำเภออื่นๆ')">
+      <ion-icon ios="ios-map" md="md-map" color="buriram"></ion-icon>
+      <p>อำเภออื่นๆ</p>
+    </div>
+    <div class="box" (click)="openPage($event, 'นครราชสีมาและสมุทรปราการ')">
+      <ion-icon ios="ios-map" md="md-map" color="buriram"></ion-icon>
+      <p>นครราชสีมาและสมุทรปราการ</p>
+    </div>
+  </div>
+
+
+
+  <header>
+    <img src="http://www.buriramgames.com/wp-content/uploads/2019/01/Asset-44.svg" width="50%" />
+  </header>
+</ion-content>
+<ion-footer>
+  <ion-toolbar onclick="window.open('https://www.bru.ac.th', '_system', 'location=yes'); return false;">
+      <p class="footer">Copyright © 2019 BRU</p>
+  </ion-toolbar>
+</ion-footer>
